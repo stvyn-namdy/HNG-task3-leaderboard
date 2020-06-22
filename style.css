@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway&display=swap');
+
+/*************************************************
+=================NAVBAR===========================
+*************************************************/
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding-top: 20px;
+}
+
+a {
+    color:#000;
+    text-decoration: none;
+}
+
+nav {
+    float: right;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 3rem;
+    padding-top: 1.6rem;
+    position: relative;
+}
+
+nav a {
+     color: black;
+     text-decoration: none;
+     font-size: 1rem;
+}
+
+nav a:hover {
+    color: #0062FF;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.6em 1.3em;
+    border-radius: .7em;
+    background: #0062FF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;    
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #0062FF;
+
+    position: absolute;
+    top: 40%;
+    width: 0%;
+
+    transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+/* Leaderboard section */
+* {
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: border-box;
+}
+
+body {
+    background: #b5ecf8;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.board_section {
+    width: 500px;
+    height: 500px;
+    margin: 100px auto 0;
+    background: #ff941a;
+    border-radius: 10px;
+    padding: 25px 40px;
+    position: relative;
+}
+
+.board_section ul {
+    display: flex;
+}
+
+.board_section ul li {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.board_section ul li:hover,
+.board_section ul li.active {
+    color: #ffffff;
+}
+
+.board_wrap {
+    position: absolute;
+    top: 70px;
+    left: 40px;
+    background: #ffd000;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.board_wrap .board_item {
+    padding: 30px;
+}
+
+.board_wrap .board_item .board_mem {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #f5c150;
+}
+
+.board_wrap .board_item .board_mem:first-child {
+    padding-top: 0;
+}
+
+.board_wrap .board_item .board_mem:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.board_wrap .board_mem .img {
+    height: 50px;
+    width: 50px;
+}
+
+.board_wrap .board_mem .img img {
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.board_wrap .board_item .name_bar {
+    margin: 0 30px;
+    width: calc(100% - 150px);
+}
+
+.board_wrap .board_item .name_bar p {
+    color: #f9f9f9;
+}
+
+.board_wrap .board_item .name_bar p span {
+    margin-right: 10px;
+}
+
+.board_wrap .board_item .points {
+    width: 100px;
+    color: #ff0000;
+}
+
+.board_wrap .board_item .bar_wrap {
+    height: 5px;
+    width: 100%;
+    background: #d54e00;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.board_wrap .board_item .bar_wrap .inner_bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background: #fff;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
